@@ -15,5 +15,6 @@ typedef struct _Peca{
 void IniciarJanela(SDL_Window **,SDL_Renderer **);
 void TratarEvento(SDL_Event e,int &rodando);
 void LimparSair(SDL_Window **,SDL_Renderer **);
+Peca CriarPeca(uint8_t,uint8_t);
 
 #endif

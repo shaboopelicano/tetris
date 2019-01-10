@@ -36,3 +36,7 @@ void TratarEvento(SDL_Event e, int &rodando)
         }
     }
 }
+
+Peca CriarPeca(uint8_t){
+    
+}

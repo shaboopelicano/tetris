@@ -10,17 +10,23 @@ int main(int argc, char *argv[])
     int rodando = 1;
 
     IniciarJanela(&janela, &renderer);
-
+    
     while (rodando)
     {
+        // Limpar tela
+        SDL_SetRenderDrawColor(renderer,0,0,0,255);
         SDL_RenderClear(renderer);
-        SDL_Rect r = { 0 , 0 , 100 , 100 };
-        SDL_RenderDrawRect(renderer,&r);
+
+        // Posicionar Peça
+        SDL_SetRenderDrawColor(renderer,255,255,255,255);
+        SDL_RenderFillRect(renderer, &r);
+
+        // Apresentar, Eventos, Delay
         SDL_RenderPresent(renderer);
         TratarEvento(eventoContainer, rodando);
         SDL_Delay(33);
     }
 
-    LimparSair(&janela,&renderer);
+    LimparSair(&janela, &renderer);
     return 0;
 }
