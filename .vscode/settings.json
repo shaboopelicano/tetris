@@ -1,2 +1,7 @@
 {
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}",
+        "C:\\MinGW\\include",
+        "C:\\mingw_dev_lib\\i686-w64-mingw32\\include\\SDL2"
+    ]
 }
