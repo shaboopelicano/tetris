@@ -6,7 +6,7 @@
         {
             "label": "buildar",
             "type": "shell",
-            "command": "mingw32-make && ./main.exe && exit",
+            "command": "mingw32-make clean && mingw32-make && ./main.exe && exit",
             "group": {
                 "kind": "build",
                 "isDefault": true

@@ -43,6 +43,16 @@ void TratarEvento(SDL_Event e, int &rodando)
                     velX = 1;
                     break;
             }
+            break;  
+        case SDL_KEYUP:
+            switch(e.key.keysym.sym){
+                case SDLK_LEFT:
+                    velX = 0;
+                    break;
+                case SDLK_RIGHT:
+                    velX = 0;
+                    break;
+            }
             break;
         case SDL_QUIT:
             rodando = 0;

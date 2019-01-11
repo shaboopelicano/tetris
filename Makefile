@@ -24,3 +24,6 @@ OBJ_NAME = main
 #This is the target that compiles our executable
 all : $(OBJS)
 	$(CC) -g $(OBJS) $(INCLUDE_PATHS) $(LIBRARY_PATHS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
+
+clean:
+	rm -f main.exe
