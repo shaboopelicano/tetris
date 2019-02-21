@@ -2,6 +2,10 @@
     "C_Cpp.default.includePath": [
         "${workspaceFolder}",
         "C:\\MinGW\\include",
-        "C:\\mingw_dev_lib\\i686-w64-mingw32\\include\\SDL2"
-    ]
+        "C:\\mingw_dev_lib\\i686-w64-mingw32\\include\\SDL2",
+        "C:\\Users\\tulio\\Downloads\\glfw-3.2.1.bin.WIN64\\glfw-3.2.1.bin.WIN64\\include"
+    ],
+    "files.associations": {
+        "ostream": "cpp"
+    }
 }
